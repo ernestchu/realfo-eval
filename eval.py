@@ -67,16 +67,16 @@ if __name__ == "__main__":
         help="Type of manipulation to test on, should be one of (DF | F2F | FS | NT)"
     )
     parser.add_argument(
+        "--data_root",
+        type=str,
+        required=True,
+        help="Directory to FaceForensics dataset"
+    )
+    parser.add_argument(
         "--compression",
         type=str,
         default='c23',
         help="Compression of testing videos, should be one of (raw | c23 | c40)"
-    )
-    parser.add_argument(
-        "--data_root",
-        type=str,
-        default='/home/ernestchu/scratch4/OriginalDatasets/FF/',
-        help="Directory to FaceForensics dataset"
     )
     
     args = parser.parse_args()

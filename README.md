@@ -29,6 +29,7 @@ Create a directory `weights` and place the downloaded weights under it. Your pro
     └── realforensics_allbutnt.pth
 ```
 
+You should also modify the `DATA` root directory in `run.sh` according to your dataset location.  
 Now we can run the **leave-one-out** evaluation
 ```sh
 ./run.sh
