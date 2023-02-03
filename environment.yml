@@ -1,0 +1,17 @@
+name: realfo-eval
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.7
+  - pip:
+    - accelerate
+    - evaluate
+    - scikit-learn
+    - git+https://github.com/ernestchu/yacs.git
+    - pytorchvideo
